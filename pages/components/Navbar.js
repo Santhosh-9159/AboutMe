@@ -10,7 +10,7 @@ function Navbar() {
     <>
       <div className=" justify-between items-center flex flex-row ">
             
-            <div className="flex flex-col w-full h-full justify-arround pt-20 animate__animated animate__fadeInRight">
+            <div className="flex flex-col w-full h-full justify-arround pt-20">
               {navbar.map((item, id) => {
                 return (
                   <Box
