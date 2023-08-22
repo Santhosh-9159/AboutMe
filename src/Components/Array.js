@@ -1,7 +1,7 @@
 import { FaHome  } from "react-icons/fa";
 import {FcAbout} from "react-icons/fc"
 import {PiSuitcaseSimpleDuotone} from "react-icons/pi"
-import {IoMdContact} from "react-icons/Io"
+import {MdPermContactCalendar} from "react-icons/md"
 import {SiBloglovin} from "react-icons/Si"
 export const navbar =[
     {
@@ -22,7 +22,7 @@ export const navbar =[
     {
         title :"Contact",
         to :"/contact",
-        icon:<IoMdContact />
+        icon:<MdPermContactCalendar />
     },
     {
         title :"Blog",
