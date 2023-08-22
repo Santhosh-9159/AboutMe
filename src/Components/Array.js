@@ -2,7 +2,7 @@ import { FaHome  } from "react-icons/fa";
 import {FcAbout} from "react-icons/fc"
 import {PiSuitcaseSimpleDuotone} from "react-icons/pi"
 import {MdPermContactCalendar} from "react-icons/md"
-import {SiBloglovin} from "react-icons/Si"
+import {SiBloglovin} from "react-icons/si"
 export const navbar =[
     {
         title :"Home",
