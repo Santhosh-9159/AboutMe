@@ -6,17 +6,17 @@ import {SiBloglovin} from "react-icons/si"
 export const navbar =[
     {
         title :"Home",
-        to :"/homepg",
+        to :"homepg",
         icon: <FaHome />
     },
     {
         title :"About",
-        to :"/about",
+        to :"about",
         icon:<FcAbout />
     },
     {
         title :"Work",
-        to :"/work",
+        to :"work",
         icon:<PiSuitcaseSimpleDuotone/>
     },
     {

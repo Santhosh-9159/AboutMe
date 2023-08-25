@@ -1,14 +1,18 @@
 import { navbar } from "@/src/Components/Array";
 import Image from "next/image";
 import { router } from "next/router";
-import React from "react";
+import React, { useState } from "react";
 import Layout from "./components/Layout";
 import 'animate.css';
+import About from "./about";
+import Mymodel from "./mymodel";
 function Homepg() {
+
+  const [aboutMe, setAboutMe] = useState(false)
   return (
     <>
     <Layout>
-    <div className="flex flex-col w-full overflow-hidden text-white">
+    <div className="flex flex-col w-full overflow-hidden text-white ">
        
         <div className="flex flex-row w-full justify-between">
           <div className="flex flex-row w-[90%] gap-5 h-full items-center justify-between p-10">
@@ -29,12 +33,14 @@ function Homepg() {
                 </div>
               </div>
               <div>
-                <button className="text-blue-500">MORE ABOUT ME</button>
-              </div>
+                <button className="text-blue-500" onClick={()=>(setAboutMe(true))}>MORE ABOUT ME</button>
+                {aboutMe && <Mymodel aboutMe={aboutMe} setAboutMe={setAboutMe}/>}
+        </div>
             </div>
           </div>
          
         </div>
+        
       </div>
 
             </Layout>

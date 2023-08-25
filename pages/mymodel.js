@@ -1,19 +1,16 @@
+import { Modal } from '@mui/material'
+import React from 'react'
 
-import React from "react";
-import Layout from "./components/Layout";
-import 'animate.css';
-
-
-function About() {
+function Mymodel({aboutMe, setAboutMe}) {
   return (
     <>
-    <Layout>
-      
-      <div className="flex flex-col w-[100%] text-white ">
-<div className="flex flex-row p-2 items-center justify-around text-[40px] ">
+     <Modal open={aboutMe} sx={{display:"flex",borderRadius:"10px" ,flexDirection:"column " ,width:"100%",padding:"20px",alignItems:"center",justifyContent:"center",backgroundColor:"#3b3b3b9c",overflowY:"scroll",height:"100%"}}>
+      <div className="flex flex-col w-[80%] text-white m-10 h-[80%]">
+<div className="flex flex-row p-2 items-center justify-around text-[40px] rounded-md">
 <div> <h1>About
   <span className=" text-blue-500 pl-2"   >ME</span>
   </h1></div>
+ <button onClick={()=>(setAboutMe(false))}  className='px-5 py-1 bg-blue-400 color-white text-xl cursor-pointer rounded-md'>X</button>
   </div>        
 <div className="flex flex-col  w-full gap-5">
 
@@ -32,7 +29,7 @@ function About() {
           
             <p  className=" bg-[#262626] ">Last Name : gunaseelan</p>
             <p  className=" bg-[#262626] ">Nationality : Indian</p>
-            <p  className=" bg-[#262626] ">Address : 3/389,Sanarpathy,Vinnapalli(po),Sathyamangalam</p>
+            <p  className=" bg-[#262626] ">Address : 3/389,Sanarpathy,Vinnapalli(po),<br/>Sathyamangalam</p>
             <p  className=" bg-[#262626] ">Email : santhoshgunaseelan8@gamil.com</p>
             <p  className=" bg-[#262626] ">Language : Tamil,English</p>
           </div>
@@ -102,10 +99,10 @@ function About() {
             </div>
             </div>
       </div>
-      
-      </Layout>
+      </Modal>
+
     </>
-  );
+  )
 }
 
-export default About;
+export default Mymodel
