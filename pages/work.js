@@ -38,14 +38,14 @@ function work() {
               <div className="flex flex-col p-5 gap-3 bg-[#262626] rounded-2xl ">
                 <div>
                   <Image
-                    src={require("../src/Assest/project 1.png")}
+                    src={require("../src/Assest/project 2.png")}
                     className="felx w-[100%] rounded-2xl"
                   ></Image>
                 </div>
                 <div className="flex flex-col gap-3 bg-[#262626] items-center justify-center">
                   <div className="bg-[#262626]">Web Development</div>
                   <a
-                    href="https://himalayan-website.vercel.app/"
+                    href="https://shopify-beta-seven.vercel.app/"
                     className="bg-[#262626] rounded-2xl"
                   >
                     Project Web Center
