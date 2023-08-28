@@ -51,7 +51,7 @@ function work() {
                     Project Web Center
                   </a>
                   <div className="bg-[#262626] ">
-                    Built- React JS | Material UI
+                    Built- Next JS | Tailwind CSS
                   </div>
                 </div>
               </div>
